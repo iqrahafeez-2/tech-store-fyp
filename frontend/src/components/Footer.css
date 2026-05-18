@@ -1,0 +1,15 @@
+.footer { margin-top: 56px; background: #0f172a; color: #e2e8f0; padding: 48px 0 20px; }
+.footer-grid { display: grid; grid-template-columns: 1.4fr 0.7fr 0.7fr 1fr; gap: 28px; }
+.footer h4 { margin: 0 0 14px; color: white; }
+.footer a { display: block; color: #cbd5e1; font-size: 14px; margin-bottom: 10px; }
+.footer a:hover { color: white; }
+.footer p { color: #cbd5e1; line-height: 1.7; font-size: 14px; }
+.footer-brand-line { color: white; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+.footer-brand-line small { color: #cbd5e1; display: block; }
+.brand-mark { width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; color: white; background: linear-gradient(135deg, #2563eb, #7c3aed); font-weight: 900; }
+.newsletter-form { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin-top: 12px; }
+.newsletter-form input { border: 1px solid rgba(255, 255, 255, 0.12); background: rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 0 12px; min-height: 42px; color: white; }
+.newsletter-form button { border: none; border-radius: 12px; min-height: 42px; padding: 0 14px; font-weight: 900; background: #2563eb; color: white; }
+.footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.12); margin-top: 34px; padding-top: 18px; display: flex; justify-content: space-between; gap: 16px; color: #94a3b8; font-size: 13px; }
+@media (max-width: 850px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .footer-grid, .newsletter-form { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; } }

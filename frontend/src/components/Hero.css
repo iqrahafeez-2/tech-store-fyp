@@ -1,0 +1,135 @@
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 28px;
+  align-items: center;
+  padding-top: 28px;
+}
+
+.hero-copy p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 620px;
+  margin: 18px 0 0;
+}
+
+.hero-copy h1 {
+  margin-top: 18px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin: 26px 0 18px;
+  flex-wrap: wrap;
+}
+
+.trust-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.trust-row span {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 12px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.hero-panel {
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.hero-glow {
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.28), transparent 70%);
+  filter: blur(2px);
+}
+
+.hero-product-main {
+  position: relative;
+  font-size: 168px;
+  transform: rotate(-7deg);
+  filter: drop-shadow(0 24px 40px rgba(15, 23, 42, 0.16));
+}
+
+.hero-floating-card {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-floating-card strong,
+.hero-floating-card span {
+  display: block;
+}
+
+.hero-floating-card strong {
+  font-size: 13px;
+}
+
+.hero-floating-card span {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.hero-floating-card.top {
+  top: 44px;
+  right: 38px;
+}
+
+.hero-floating-card.bottom {
+  left: 34px;
+  bottom: 56px;
+}
+
+.hero-dots {
+  position: absolute;
+  bottom: 22px;
+  display: flex;
+  gap: 8px;
+}
+
+.hero-dots span {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--border);
+}
+
+.hero-dots span.active {
+  width: 26px;
+  background: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-panel {
+    min-height: 300px;
+  }
+
+  .hero-product-main {
+    font-size: 110px;
+  }
+}

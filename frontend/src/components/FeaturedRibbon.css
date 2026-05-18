@@ -1,0 +1,43 @@
+.featured-ribbon {
+  margin-top: 14px;
+  margin-bottom: 28px;
+  padding: 28px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: var(--shadow);
+}
+
+.featured-ribbon .eyebrow {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.featured-ribbon h2 {
+  margin-top: 12px;
+  max-width: 760px;
+}
+
+.featured-ribbon p {
+  color: #dbeafe;
+  line-height: 1.7;
+  max-width: 820px;
+  margin-top: 12px;
+}
+
+.featured-ribbon .btn-primary {
+  background: white;
+  color: #1d4ed8;
+  flex-shrink: 0;
+}
+
+@media (max-width: 780px) {
+  .featured-ribbon {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
